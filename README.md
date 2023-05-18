@@ -72,13 +72,13 @@ Hello World How are you
 ```
 ### Os
 Using os commands you can execute batch commands in a vasalt script.
-### Normal
+#### Normal
 ```vlt
   os[echo 1]
   os[cls]
   os[exit]
 ```
-### Concat
+#### Concat
 Concat a list of batch commands to be executed.
 ```vlt
   os[concat
