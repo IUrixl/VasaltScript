@@ -1,6 +1,9 @@
 # VasaltScript
 Vasalt is a "programming language" made to see how far i can go using only batch.
-It's not intended to be a professional language so don't expect big things (building into .exe is not avaliable),
+It's not intended to be a professional language so don't expect big things (building into .exe is not avaliable). \
+
+![Batch](https://img.shields.io/badge/Batch-%23000000.svg?style=for-the-badge&logo=GNUBash&logoColor=white)
+![Version](https://img.shields.io/badge/Version-1.01b-9cf?style=for-the-badge)
 
 ## Basic guide
 ### Creation of files
