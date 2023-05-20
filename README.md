@@ -103,16 +103,16 @@ print[Time waited succesfully]
 #### Variable
 Basic script example
 ```vlt
-  $secs = 4
-  print[\]
-  print[concat
-    Waiting
-    $secs
-  ]
-  wait[$secs]
-  print[\]
-  print[concat
-    Succesfully waited
-    $secs
-  ]
+$secs = 4
+print[\]
+print[concat
+  Waiting
+  $secs
+]
+wait[$secs]
+print[\]
+print[concat
+  Succesfully waited
+  $secs
+]
 ```
