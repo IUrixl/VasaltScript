@@ -1,6 +1,6 @@
 # VasaltScript
 Vasalt is a "programming language" made to see how far i can go using only batch.
-It's not intended to be a professional language so don't expect big things (building into .exe is not avaliable). \
+It's not intended to be a professional language so don't expect big things (building into .exe is not avaliable).
 
 ![Batch](https://img.shields.io/badge/Batch-%23000000.svg?style=for-the-badge&logo=GNUBash&logoColor=white)
 ![Version](https://img.shields.io/badge/Version-1.01b-9cf?style=for-the-badge)
@@ -87,5 +87,32 @@ Concat a list of batch commands to be executed.
     echo 2
     echo 3
     exit
+  ]
+```
+
+### Wait
+#### Normal
+Basic script example
+```vlt
+print[\]
+print[Waiting 1 second]
+wait[1]
+print[\]
+print[Time waited succesfully]
+```
+#### Variable
+Basic script example
+```vlt
+  $secs = 4
+  print[\]
+  print[concat
+    Waiting
+    $secs
+  ]
+  wait[$secs]
+  print[\]
+  print[concat
+    Succesfully waited
+    $secs
   ]
 ```
