@@ -81,25 +81,15 @@ Concat a list of batch commands to be executed.
 #### Normal
 Basic script example
 ```vlt
-print[\]
 print[Waiting 1 second]
 wait[1]
-print[\]
 print[Time waited succesfully]
 ```
 #### Variable
 Basic script example
 ```vlt
 $secs = 4
-print[\]
-print[concat
-  Waiting
-  $secs
-]
+print[Waiting $secs]
 wait[$secs]
-print[\]
-print[concat
-  Succesfully waited
-  $secs
-]
+print[Succesfully waited $secs]
 ```
