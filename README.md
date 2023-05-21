@@ -31,6 +31,11 @@ Here at Vasalt, to use a command you must use "[]" instead of "()" like in other
 Another function of Vasalt is concatenation, so in a specified list of command you can concate arguments.
 ### Variables
 Variables cannot be concatenated at the moment, to store multiple values on the same line you must create a StringBasedVar.
+### Crash characters
+The following characters may crash your script (depending on with batch version are you using)
+```
+  ?
+```
 #### Normal variables
 ```vlt
   $myVar Value1
@@ -40,35 +45,17 @@ Variables cannot be concatenated at the moment, to store multiple values on the 
   $myStringBasedVar "Value1 Value2"
 ```
 ### Print
-#### Normal print
-Supported at print concatenation. Normal print won't remove " from the text.
+Basic print scripts
 ```vlt
-  print[Hello world]
+  print[Hello World]
 ```
-#### Break print
-A void space, not supported at print concatenation.
 ```vlt
-  print[\]
+  $myStringBasedVar "Hello World"
+  print[$myStringBasedVar]
 ```
-#### Var print
-Print variable balue, supported at print concatenation. Variable print will remove " from StrinBasedVars
 ```vlt
-  print[$myVar]
-``` 
-#### Concatenation print
-Print multiple values and text in the same line.
-```vlt
-  $myStr "How are you"
-  
-  print[concat
-    Hello
-    World
-    $myStr
-  ]
-```
-Output:
-```
-Hello World How are you
+  $myStringBasedVar "How are you"
+  print[Hello World $myStringBasedVar]
 ```
 ### Os
 Using os commands you can execute batch commands in a vasalt script.
