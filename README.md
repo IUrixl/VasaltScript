@@ -34,7 +34,7 @@ Variables cannot be concatenated at the moment, to store multiple values on the 
 ### Crash characters
 The following characters may crash your script (depending on with batch version are you using)
 ```
-  ?
+  ?, spaces at the beggining, tabulations
 ```
 #### Normal variables
 ```vlt
@@ -92,4 +92,18 @@ $secs = 4
 print[Waiting $secs]
 wait[$secs]
 print[Succesfully waited $secs]
+```
+### If
+#### Boolean If
+```vlt
+ $boolean true
+ 
+ if $boolean [
+ 
+ print[it's true]
+ 
+ else
+ 
+ print[it's false]
+ ]
 ```
