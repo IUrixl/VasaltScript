@@ -99,11 +99,8 @@ print[Succesfully waited $secs]
  $boolean true
  
  if $boolean [
- 
  print[it's true]
- 
- else
- 
+ #else
  print[it's false]
  ]
 ```
