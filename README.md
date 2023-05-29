@@ -5,6 +5,13 @@ It's not intended to be a professional language so don't expect big things (buil
 ![Batch](https://img.shields.io/badge/Batch-%23000000.svg?style=for-the-badge&logo=GNUBash&logoColor=white)
 ![Version](https://img.shields.io/badge/Version-1.01b-9cf?style=for-the-badge)
 
+## Index
+- Basic guide
+    - [Create a file](#creation-of-files)
+    - [Execute a file](#executin-a-file)
+    - [Check the version](#check-current-version)
+    - [Updating Vasalt](#updating-vasalt)
+
 ## Basic guide
 ### Creation of files
 To create a VasaltScript file, name your file to whatever you want and then add .vlt at the end.
