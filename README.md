@@ -107,3 +107,23 @@ print[Succesfully waited $secs]
  print[it's false]
  ]
 ```
+#### Params if
+Params :
+```vlt
+ equ = equal
+ neq = not equal
+ gtr = greater
+ lss = less
+ leq = less or equal
+ geq = greater or equal
+```
+
+```vlt
+$myVar 1
+
+if $myVar neq 0 [
+print[it's not 0]
+else
+print[it's 0]
+]
+```
