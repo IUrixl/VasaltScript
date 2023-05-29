@@ -36,6 +36,9 @@ The following characters may crash your script (depending on with batch version 
 ```
   ?, spaces at the beggining, tabulations
 ```
+
+Exceptions:
+Os concatenation allow spaces at the beggining and tabulations.
 #### Normal variables
 ```vlt
   $myVar Value1
