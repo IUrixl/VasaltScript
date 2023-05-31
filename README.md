@@ -8,9 +8,23 @@ It's not intended to be a professional language so don't expect big things (buil
 ## Index
 - Basic guide
     - [Create a file](#creation-of-files)
-    - [Execute a file](#executin-a-file)
+    - [Execute a file](#executing-a-file)
     - [Check the version](#check-current-version)
     - [Updating Vasalt](#updating-vasalt)
+ - Syntaxis basics
+    - [Command syntaxis](#commands-syntaxis)
+    - [Command concatenation](#command-concatenation)
+    - [Crash characters](#crash-characters)
+    - [Variables](#variables)
+        - [Normal](#normal-variables)
+        - [StringBasedVar](#stringbasedvars)
+    - [Print](#print)
+    - [Os](#os)
+        - [Normal](#normal-os)
+        - [Concat](#concat-os)
+    - [Wait](#wait)
+        - [Normal](#normal-wait)
+        - [Variable](#variable-wait)
 
 ## Basic guide
 ### Creation of files
@@ -36,8 +50,6 @@ vasalt --update
 Here at Vasalt, to use a command you must use "[]" instead of "()" like in other languages.
 ### Command concatenation
 Another function of Vasalt is concatenation, so in a specified list of command you can concate arguments.
-### Variables
-Variables cannot be concatenated at the moment, to store multiple values on the same line you must create a StringBasedVar.
 ### Crash characters
 The following characters may crash your script (depending on with batch version are you using)
 ```
@@ -46,6 +58,8 @@ The following characters may crash your script (depending on with batch version 
 
 Exceptions:
 Os concatenation allow spaces at the beggining and tabulations.
+### Variables
+Variables cannot be concatenated at the moment, to store multiple values on the same line you must create a StringBasedVar.
 #### Normal variables
 ```vlt
   $myVar Value1
@@ -69,13 +83,13 @@ Basic print scripts
 ```
 ### Os
 Using os commands you can execute batch commands in a vasalt script.
-#### Normal
+#### Normal Os
 ```vlt
   os[echo 1]
   os[cls]
   os[exit]
 ```
-#### Concat
+#### Concat Os
 Concat a list of batch commands to be executed.
 ```vlt
   os[concat
@@ -88,14 +102,14 @@ Concat a list of batch commands to be executed.
 ```
 
 ### Wait
-#### Normal
+#### Normal Wait
 Basic script example
 ```vlt
 print[Waiting 1 second]
 wait[1]
 print[Time waited succesfully]
 ```
-#### Variable
+#### Variable Wait
 Basic script example
 ```vlt
 $secs = 4
