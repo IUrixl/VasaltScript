@@ -25,6 +25,9 @@ It's not intended to be a professional language so don't expect big things (buil
     - [Wait](#wait)
         - [Normal](#normal-wait)
         - [Variable](#variable-wait)
+    - [if](#if)
+        - [Boolean if](#boolean-if)
+        - [Params if](#params-if)
 
 ## Basic guide
 ### Creation of files
