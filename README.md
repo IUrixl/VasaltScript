@@ -25,9 +25,11 @@ It's not intended to be a professional language so don't expect big things (buil
     - [Wait](#wait)
         - [Normal](#normal-wait)
         - [Variable](#variable-wait)
-    - [if](#if)
+    - [If](#if)
         - [Boolean if](#boolean-if)
         - [Params if](#params-if)
+    - [Function](#functions)
+    - [Import](#import)
 
 ## Basic guide
 ### Creation of files
@@ -185,4 +187,10 @@ print[$arg]
 
 >myFunc $var
 print[The var i sent was $var & the argument i recieved was $arg]
+```
+
+# Import
+Don't add the .vlt at the end.
+```vlt
+import file
 ```
