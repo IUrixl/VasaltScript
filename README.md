@@ -56,7 +56,7 @@ Here at Vasalt, to use a command you must use "[]" instead of "()" like in other
 ### Command concatenation
 Another function of Vasalt is concatenation, so in a specified list of command you can concate arguments.
 ### Crash characters
-The following characters may crash your script (depending on with batch version are you using)
+The following characters may crash your script (depending on witch batch version are you using)
 ```
   ?
 ```
