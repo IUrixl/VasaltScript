@@ -151,3 +151,37 @@ else
 print[it's 0]
 ]
 ```
+
+### Functions
+Basic function example
+```vlt
+function myFunc [
+print[Hello world]
+>]
+
+>myFunc
+```
+
+Passing args
+```vlt
+function myFunc [
+{1} argInPos1
+print[$argInPos1]
+>]
+
+>myFunc "Hello world
+print[My arg was $argInPos1]
+```
+
+Variable as argument
+```vlt
+$var "Hello world"
+
+function myFunc [
+{1} arg
+print[$arg]
+>]
+
+>myFunc $var
+print[The var i sent was $var & the argument i recieved was $arg]
+```
