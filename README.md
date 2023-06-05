@@ -121,15 +121,16 @@ wait[$secs]
 print[Succesfully waited $secs]
 ```
 ### If
+Tag can be changed to any text, it only works to identify the if to be closed and defined.
 #### Boolean If
 ```vlt
  $boolean true
  
- if $boolean [
+ if $boolean [tag
  print[it's true]
  #else
  print[it's false]
- ]
+ tag]
 ```
 #### Params if
 Params :
@@ -145,11 +146,11 @@ Params :
 ```vlt
 $myVar 1
 
-if $myVar neq 0 [
+if $myVar neq 0 [tag
 print[it's not 0]
 else
 print[it's 0]
-]
+tag]
 ```
 
 ### Functions
