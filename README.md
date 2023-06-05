@@ -58,7 +58,7 @@ Another function of Vasalt is concatenation, so in a specified list of command y
 ### Crash characters
 The following characters may crash your script (depending on with batch version are you using)
 ```
-  ?, spaces at the beggining, tabulations
+  ?
 ```
 
 Exceptions:
@@ -129,9 +129,9 @@ Tag can be changed to any text, it only works to identify the if to be closed an
  $boolean true
  
  if $boolean [tag
- print[it's true]
+    print[it's true]
  #else
- print[it's false]
+    print[it's false]
  tag]
 ```
 #### Params if
@@ -149,9 +149,9 @@ Params :
 $myVar 1
 
 if $myVar neq 0 [tag
-print[it's not 0]
+    print[it's not 0]
 else
-print[it's 0]
+    print[it's 0]
 tag]
 ```
 
@@ -159,7 +159,7 @@ tag]
 Basic function example
 ```vlt
 function myFunc [
-print[Hello world]
+    print[Hello world]
 >]
 
 >myFunc
@@ -168,8 +168,8 @@ print[Hello world]
 Passing args
 ```vlt
 function myFunc [
-{1} argInPos1
-print[$argInPos1]
+    {1} argInPos1
+    print[$argInPos1]
 >]
 
 >myFunc "Hello world
@@ -181,8 +181,8 @@ Variable as argument
 $var "Hello world"
 
 function myFunc [
-{1} arg
-print[$arg]
+    {1} arg
+    print[$arg]
 >]
 
 >myFunc $var
