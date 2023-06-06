@@ -152,7 +152,7 @@ $myVar 1
 
 if $myVar neq 0 [tag
     print[it's not 0]
-else
+#else
     print[it's 0]
 tag]
 ```
