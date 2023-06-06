@@ -30,6 +30,8 @@ It's not intended to be a professional language so don't expect big things (buil
         - [Params if](#params-if)
     - [Function](#functions)
     - [Import](#import)
+        - [Normal](#normal-import)
+        - [As import](#as-import)
 
 ## Basic guide
 ### Creation of files
@@ -189,8 +191,55 @@ function myFunc [
 print[The var i sent was $var & the argument i recieved was $arg]
 ```
 
-# Import
+### Import
+#### Normal import
 Don't add the .vlt at the end.
 ```vlt
 import file
+```
+#### As import
+```vlt
+import file as f
+```
+
+## Libraries
+### Types of libraries
+#### Basics libraries
+They don't require to use import as, using import will work with it.
+#### Advanced libraries
+They require to use import as.
+### Importing
+To import a library you must use [import as](#as-import)
+```vlt
+import myCoolLibrary as lib
+```
+### Creating
+#### Basic
+Basic library's functions can only be executed by the name written on the declaration.
+```vlt mylib.vlt
+function mylib.main [
+    {1} arg
+    print[$arg]
+]
+```
+
+```vlt main.vlt
+import mylib
+
+>mylib.main "hello world"
+```
+#### Advanced
+Advancd library's function's name can be assigned by the users using the import as method.
+```vlt mylib.vlt
+function -#-.main [
+    {1} arg
+    print[$arg]
+]
+
+```
+
+```vlt main.vlt
+import mylib as lib
+
+>lib.main "hello world"
 ```
