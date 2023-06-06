@@ -204,7 +204,7 @@ import file as f
 
 ## Libraries
 ### Types of libraries
-#### Basics libraries
+#### Basic libraries
 They don't require to use import as, using import will work with it.
 #### Advanced libraries
 They require to use import as.
