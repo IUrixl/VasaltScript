@@ -202,6 +202,40 @@ import file
 import file as f
 ```
 
+### Maths
+#### Normal math
+Spaces are not important here.
+```vlt
+=[returnVar] 1+1
+=[rV] 1 + 1
+
+print[$returnVar & $rv]
+```
+#### Variable maths
+Spaces are very important here.
+```vlt
+$num1 1
+$num2 5
+
+=[rV] $num1 + $num2
+
+print[rV]
+```
+
+### Input
+```vlt
+$textSample "works with vars too"
+input[returnVar] Did you knew that inputs $textSample
+
+print[$returnVar]
+```
+#### Input space at the end
+```vlt
+input[rV] Input your age : \
+
+print[$rV]
+```
+
 ## Libraries
 ### Types of libraries
 #### Basic libraries
