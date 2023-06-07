@@ -239,7 +239,7 @@ print[$rV]
 ## Libraries
 ### Types of libraries
 #### Basic libraries
-They don't require to use import as, using import will work with it.
+They don't require to use import as, using import will work with them.
 #### Advanced libraries
 They require to use import as.
 ### Importing
