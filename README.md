@@ -32,6 +32,13 @@ It's not intended to be a professional language so don't expect big things (buil
     - [Import](#import)
         - [Normal](#normal-import)
         - [As import](#as-import)
+    - [Math](#maths)
+        - [Normal](#normal-maths)
+        - [Variable](#variable-maths)
+     - [Quit](#quit)
+- Libraries
+    - [Types](#types-of-libraries)
+    - [Create](#creating-libraries)
 
 ## Basic guide
 ### Creation of files
@@ -236,6 +243,12 @@ input[rV] Input your age : \
 print[$rV]
 ```
 
+### Quit
+Makes the code quit running.
+```vlt
+    quit
+```
+
 ## Libraries
 ### Types of libraries
 #### Basic libraries
@@ -247,7 +260,7 @@ To import a library you must use [import as](#as-import)
 ```vlt
 import myCoolLibrary as lib
 ```
-### Creating
+### Creating libraries
 #### Basic
 Basic library's functions can only be executed by the name written on the declaration.
 ```vlt mylib.vlt
