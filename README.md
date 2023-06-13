@@ -6,7 +6,7 @@ It's not intended to be a professional language so don't expect big things (buil
 ![Version](https://img.shields.io/badge/Version-1.01b-9cf?style=for-the-badge)
 
 ## Index
-- Basic guide
+- [Basic guide](#basic-guide)
     - [Create a file](#creation-of-files)
     - [Execute a file](#executing-a-file)
     - [Check the version](#check-current-version)
@@ -36,7 +36,7 @@ It's not intended to be a professional language so don't expect big things (buil
         - [Normal](#normal-maths)
         - [Variable](#variable-maths)
      - [Quit](#quit)
-- Libraries
+- [Libraries](#libraries)
     - [Types](#types-of-libraries)
     - [Create](#creating-libraries)
 
