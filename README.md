@@ -11,6 +11,7 @@ It's not intended to be a professional language so don't expect big things (buil
     - [Execute a file](#executing-a-file)
     - [Check the version](#check-current-version)
     - [Updating Vasalt](#updating-vasalt)
+    - [Custom cmd line](#vasalt-cmdline)
  - Syntaxis basics
     - [Command syntaxis](#commands-syntaxis)
     - [Command concatenation](#command-concatenation)
@@ -58,6 +59,8 @@ If your version is uptodate, you must update vasalt. To do that, go to the cmd a
 ```cmd
 vasalt --update
 ```
+### Vasalt cmdline
+If you doubleclick vasalt you will open the cmdline of vasalt, meanwhile opening it from cmd while use the compiler mode.
 
 ## Syntaxis basics
 ### Commands syntaxis
