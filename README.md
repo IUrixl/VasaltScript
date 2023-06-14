@@ -12,7 +12,7 @@ It's not intended to be a professional language so don't expect big things (buil
     - [Check the version](#check-current-version)
     - [Updating Vasalt](#updating-vasalt)
     - [Custom cmd line](#vasalt-cmdline)
- - Syntaxis basics
+ - [Syntaxis basics](#syntaxis-basics)
     - [Command syntaxis](#commands-syntaxis)
     - [Command concatenation](#command-concatenation)
     - [Crash characters](#crash-characters)
