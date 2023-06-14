@@ -62,6 +62,11 @@ vasalt --update
 ### Vasalt cmdline
 If you doubleclick vasalt you will open the cmdline of vasalt, meanwhile opening it from cmd while use the compiler mode.
 
+Other method to run the cmdline is calling it by the cmd.
+```cmd
+    vasalt --cmd
+```
+
 ## Syntaxis basics
 ### Commands syntaxis
 Here at Vasalt, to use a command you must use "[]" instead of "()" like in other languages.
