@@ -257,8 +257,32 @@ Makes the code quit running.
     quit
 ```
 
+### For
+#### Range for
+```vlt
+$start 1
+$end 10
+    
+for yourVarIndex|yourContentVar r[$start|$end] [tag
+    print[$yourVarIndex]
+tag]
+```
+```vlt
+for i|v r[1|20] [f
+    print[$i]
+f]
+```
+#### String for
+```vlt
+$myStr "Hello world this is my string"
+    
+for i|v $myStr [f
+    print[Index : $i & Content $v]
+f]
+```
+
 ## Libraries
-### Types of libraries
+### Types of libraries]
 #### Basic libraries
 They don't require to use import as, using import will work with them.
 #### Advanced libraries
