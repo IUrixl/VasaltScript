@@ -11,7 +11,8 @@ It's not intended to be a professional language so don't expect big things (buil
     - [Execute a file](#executing-a-file)
     - [Check the version](#check-current-version)
     - [Updating Vasalt](#updating-vasalt)
-    - [Custom cmd line](#vasalt-cmdline)
+    - [Custom cmdline](#vasalt-cmdline)
+    - [Display help](#vasalt-help)
  - [Syntaxis basics](#syntaxis-basics)
     - [Command syntaxis](#commands-syntaxis)
     - [Command concatenation](#command-concatenation)
@@ -65,6 +66,10 @@ If you doubleclick vasalt you will open the cmdline of vasalt, meanwhile opening
 Other method to run the cmdline is calling it by the cmd.
 ```cmd
     vasalt --cmd
+```
+### Vasalt help
+```cmd
+    vasalt --help
 ```
 
 ## Syntaxis basics
