@@ -5,7 +5,7 @@ REM Original repository on github / Acc: @IUrixl
 chcp 65001>nul
 
 setlocal EnableDelayedExpansion
-set currentVasaltVersion=1.01b
+set currentVasaltVersion=1.02b
 set CmdOn=false
 
 echo %cmdcmdline%|find /i """%~f0""">nul && goto :cmdInnit || goto :startConsole
