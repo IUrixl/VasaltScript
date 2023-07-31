@@ -105,10 +105,25 @@ call :checkForUpdate
 		echo( Usage: vasalt --debug
 		
 		if exist runtimeStack\ call :clearFolder runtimeStack
-		exit/b
+		exit /b
 	)
+	
 	if "%1"=="--cmd" (
 		goto :cmdInnit
+	)
+
+	if "%1"=="--help" (
+		echo( VasaltScript
+		echo( ------------------------------------------------------------------------------
+		echo( Command list
+		echo( --version ^| Display the current version
+		echo( --update  ^| Download the lastest version from github
+		echo( --run     ^| Run a file ^| args : ^<file^>
+		echo( --cmd     ^| Start the vasalt cmdline from the windows cmd
+		echo( --debug   ^| Clear runtime memory
+		echo( --help    ^| Display the command list
+
+		exit /b
 	)
 
 	:checkForUpdate
