@@ -5,7 +5,7 @@ REM Original repository on github / Acc: @IUrixl
 chcp 65001>nul
 
 setlocal EnableDelayedExpansion
-set currentVasaltVersion=1.03b
+set currentVasaltVersion=1.05b 
 set CmdOn=false
 
 echo %cmdcmdline%|find /i """%~f0""">nul && goto :cmdInnit || goto :startConsole
@@ -54,7 +54,7 @@ call :checkForUpdate
 
 	if "%1"=="--update" (
 		if !currentVasaltVersion! equ !serverVasaltVersion! goto quitAfterUpdate
-		curl -L "https://raw.githubusercontent.com/IUrixl/VasaltScript/main/vasalt.bat" --output "Vasalt.bat" --progress-bar
+		curl -L "https://raw.githubusercontent.com/IUrixl/VasaltScript/main/vasalt.bat" --ssl-no-revoke --output "Vasalt.bat" --progress-bar
 		exit /b
 	)
 
@@ -127,7 +127,7 @@ call :checkForUpdate
 	)
 
 	:checkForUpdate
-		curl -L "https://raw.githubusercontent.com/IUrixl/VasaltScript/main/PUBLICDATA" --output "currentVersion.vltVersion" --silent
+		curl -L "https://raw.githubusercontent.com/IUrixl/VasaltScript/main/PUBLICDATA" --ssl-no-revoke --output "currentVersion.vltVersion" --silent
 		set /p serverVasaltVersion=<currentVersion.vltVersion
 		set serverVasaltVersion=!serverVasaltVersion:~8!
 		del currentVersion.vltVersion
