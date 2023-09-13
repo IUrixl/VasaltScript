@@ -5,7 +5,7 @@ REM Original repository on github / Acc: @IUrixl
 chcp 65001>nul
 
 setlocal EnableDelayedExpansion
-set currentVasaltVersion=1.05b 
+set currentVasaltVersion=1.09b 
 set CmdOn=false
 
 echo %cmdcmdline%|find /i """%~f0""">nul && goto :cmdInnit || goto :startConsole
@@ -343,36 +343,6 @@ REM Kernel
 				set forM=false
 			goto :eof
 
-		:substringS
-			set "localSSIndex=1"
-			set "localSSVar="
-			set "localSSParams="
-			set "localSSResult="
-			set "localSSContent="
-
-			for %%B in (!rawLine!) do (
-				set "localSSLine=%%B"
-				if !localSSIndex!==1 set localSSVar=!localSSLine:~10,-1!
-				if !localSSIndex! gtr 1 if "!localSSParams!" neq "" set localSSParams=!localSSParams!,!localSSLine!
-				if !localSSIndex! gtr 1 if "!localSSParams!" equ "" set localSSParams=!localSSLine!
-
-				set/a localSSIndex=!localSSIndex!+1
-			)
-
-			call :getVar !localSSVar:~1!
-			set localSSContent=!returnedVar!
-			set localSSContent=!localSSContent!
-			set p=!localSSContent!
-			echo %p%
-
-			echo !test!
-			set "returnedVar=<0x000f>"
-
-			call :osWVar !localSSVar! !localSSContent!
-
-			set substringM=false
-		goto :eof
-
 		:inputS
 			set "localInputVar="
 			set "localInputPrompt="
@@ -565,18 +535,10 @@ REM Kernel
 			for %%B in (!rawLine!) do (
 				set localIfParsingValue=%%B
 
-				if !localIfIndex!==2 (
-					call :ifArgCheckVar !localIfParsingValue! localIfFirstArg
-				)
-				if !localIfIndex!==3 (
-					set localIfParser=!localIfParsingValue!
-				)
-				if !localIfIndex!==4 (
-					call :ifArgCheckVar !localIfParsingValue! localIfSecondArg
-				)
-				if !localIfIndex!==5 (
-					set localIfTag=!localIfParsingValue:~-1!
-				)
+				if !localIfIndex!==2 call :ifArgCheckVar !localIfParsingValue! localIfFirstArg
+				if !localIfIndex!==3 set localIfParser=!localIfParsingValue!
+				if !localIfIndex!==4 call :ifArgCheckVar !localIfParsingValue! localIfSecondArg
+				if !localIfIndex!==5 set localIfTag=!localIfParsingValue:~1!
 
 				set/a localIfIndex=!localIfIndex!+1
 			)
@@ -615,6 +577,7 @@ REM Kernel
 			goto :eof
 
 				:writeIfDataSlot
+					echo !localIfTag!
 					if "!line!"=="#else" set ifS=false
 					if "!line!"=="!localIfTag!]" (
 						set ifR=true
