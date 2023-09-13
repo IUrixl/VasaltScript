@@ -577,7 +577,6 @@ REM Kernel
 			goto :eof
 
 				:writeIfDataSlot
-					echo !localIfTag!
 					if "!line!"=="#else" set ifS=false
 					if "!line!"=="!localIfTag!]" (
 						set ifR=true
