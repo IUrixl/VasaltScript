@@ -40,7 +40,11 @@ You only need to download **vasalt.bat**, the other things can be deleted from y
     - [Math](#maths)
         - [Normal](#normal-maths)
         - [Variable](#variable-maths)
-     - [Quit](#quit)
+    - [Input](#input)
+    - [For](#for)
+        - [Range for](#range-for)
+        - [String for](#string-for)
+    - [Quit](#quit)
 - [Libraries](#libraries)
     - [Types](#types-of-libraries)
     - [Create](#creating-libraries)
@@ -290,7 +294,7 @@ f]
 ```
 
 ## Libraries
-### Types of libraries]
+### Types of libraries
 #### Basic libraries
 They don't require to use import as, using import will work with them.
 #### Advanced libraries
