@@ -4,6 +4,7 @@ It's not intended to be a professional language so don't expect big things (buil
 
 ![Batch](https://img.shields.io/badge/Batch-%23000000.svg?style=for-the-badge&logo=GNUBash&logoColor=white)
 ![Version](https://img.shields.io/badge/Version-1.09b-9cf?style=for-the-badge)
+![Deprecation](https://img.shields.io/badge/Deprecated-gray?style=for-the-badge)
 
 ## Download
 You only need to download **vasalt.bat**, the other things can be deleted from your download :).
