@@ -7,7 +7,7 @@ It's not intended to be a professional language so don't expect big things (buil
 ![Deprecation](https://img.shields.io/badge/Deprecated-gray?style=for-the-badge)
 
 ## Deprecation
-Consider this version obsolote, wont be working on this project anymore, dropped it a while ago. Im currently now working on multiple cool projects. Between my batch projects, of them should be already released and the other one wont take longer a compiled programming language built on batch!
+Consider this version obsolote, wont be working on this project anymore, dropped it a while ago. Im currently now working on multiple cool projects. Between my batch projects, one of them should be already released and the other one wont take longer, a compiled programming language built on batch!
 
 ## Download
 You only need to download **vasalt.bat**, the other things can be deleted from your download :).
